@@ -10,10 +10,10 @@ public class Ksiazka {
         this.liczbaStron = liczbaStron;
         this.dostepna = dostepna;
     }
-    void wypiszInfo(){
+     public void wypiszInfo(){
         System.out.println("Tytuł: "+ tytul +", Autor: "+ autor +", Stron: "+ liczbaStron+", Dostępna: "+dostepna);
     }
-    void wypozycz(){
+    public void wypozycz(){
         if(dostepna){
             dostepna=false;
             System.out.println("Księżka "+tytul + " Została wypożyczona");
@@ -23,10 +23,17 @@ public class Ksiazka {
         }
 
     }
-    void zwroc(){
+    public void zwroc(){
         dostepna=true;
         System.out.println("Kaiążka "+tytul +" została zwrócona");
     }
 
-}
+    public String getTytul(){
+        return tytul;
+    }
 
+    public boolean isDostepna(){
+        return dostepna;
+    }
+
+}

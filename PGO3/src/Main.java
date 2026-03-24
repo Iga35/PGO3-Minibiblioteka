@@ -27,5 +27,16 @@ public class Main {
         c2.zwiekszLiczbeWypozyczen();
         c2.zmniejszLiczbeWypozyczen();
 
+        Biblioteka b1= new Biblioteka(4);
+        b1.dodajKsiazke(new Ksiazka("Psi Dom", "Marek Kowalski", 500, false));
+        b1.dodajKsiazke(new Ksiazka("Podręcznik", "Agnieszka Kwiatek", 120, true));
+        b1.dodajKsiazke(new Ksiazka("Anatomia Żółwi", "Antoni Żółw", 890,true));
+
+        b1.wypiszDostepneKsiazki();
+        b1.znajdzKsiazkePoTytule("Psi Dom");
+        b1.znajdzKsiazkePoTytule("Podręcznik");
+
+        System.out.println("Liczba książeke: "+b1.policzDostepneKsiazki());
+
     }
 }

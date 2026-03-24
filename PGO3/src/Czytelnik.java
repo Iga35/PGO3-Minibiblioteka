@@ -11,16 +11,16 @@ public class Czytelnik {
         this.numerKarty = numerKarty;
         this.liczbaWypozyczen = liczbaWypozyczen;
     }
-    void wypiszDane(){
+    public void wypiszDane(){
         System.out.println("imię: "+ imie +", Nazwisko: "+ nazwisko +", Numer Karty: "+ numerKarty+", Liczba wypożyczonych książek: "+liczbaWypozyczen);
     }
 
-    void zwiekszLiczbeWypozyczen(){
+    public void zwiekszLiczbeWypozyczen(){
         liczbaWypozyczen++;
         System.out.println("Zwiększona liczba wypożyczeń: " +liczbaWypozyczen);
     }
 
-    void zmniejszLiczbeWypozyczen(){
+    public void zmniejszLiczbeWypozyczen(){
         if (liczbaWypozyczen>0){
             liczbaWypozyczen--;
             System.out.println("Zmniejszona liczba wypożyczeń: "+ liczbaWypozyczen);
