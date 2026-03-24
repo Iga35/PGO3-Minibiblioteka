@@ -1,5 +1,3 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
         Ksiazka ksiazka1= new Ksiazka("Psi Dom", "Marek Kowalski", 500, false);
@@ -18,7 +16,16 @@ public class Main {
         ksiazka3.wypozycz();
         ksiazka3.zwroc();
 
+        Czytelnik c1= new Czytelnik("Agata", "Nowak", "ko9037", 2);
+        Czytelnik c2= new Czytelnik("Maciej", "Kowalski", "ncu2313", 0);
 
+        c1.wypiszDane();
+        c1.zwiekszLiczbeWypozyczen();
+        c1.zmniejszLiczbeWypozyczen();
+
+        c2.wypiszDane();
+        c2.zwiekszLiczbeWypozyczen();
+        c2.zmniejszLiczbeWypozyczen();
 
     }
 }
